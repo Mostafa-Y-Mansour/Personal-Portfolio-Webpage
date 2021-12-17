@@ -121,6 +121,12 @@ body {
   }
 }
 
+@media screen and (max-height: 480px) {
+  .welcome-section .welcome-photo {
+    margin: -15px 0 40px;
+  }
+}
+
 /* projects-section style */
 
 .projects-section {
