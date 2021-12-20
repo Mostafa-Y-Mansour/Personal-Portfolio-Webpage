@@ -9,6 +9,11 @@
   --Raleway-font: "Raleway", sans-serif;
 }
 
+::selection {
+  background-color: var(--main-red);
+  color: var(--main-white);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -95,8 +100,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  width: 260px;
-  min-width: 200px;
+  min-width: 390px;
 }
 
 #navbar ul li .nav-link {
@@ -110,7 +114,15 @@ body {
   -o-transition: 0.3s;
 }
 
+@media screen and (max-width: 700px) {
+  #navbar h2 {
+    font-size: 1.306rem;
+  }
+}
 @media screen and (max-width: 560px) {
+  #navbar h2 {
+    font-size: 2rem;
+  }
   #navbar .burger {
     display: flex;
   }
@@ -141,6 +153,11 @@ body {
   }
 }
 
+@media screen and (max-width: 295px) {
+  #navbar h2 {
+    font-size: 1.6rem;
+  }
+}
 /* welcome-section style */
 
 .welcome-section {
